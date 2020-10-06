@@ -1,0 +1,6 @@
+read -p "Enter the phone num : " num
+regex=91\\s?[0-9]{8}
+if [[ !$num=~$regex ]]
+then echo "num is invalid"
+else echo "num is valid"
+fi
